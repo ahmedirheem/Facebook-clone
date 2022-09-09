@@ -740,3 +740,123 @@ input[type="search"]::-webkit-search-cancel-button{
     object-fit: cover;
 }
 /* End Chats Bar */
+
+/* Start Nav Left Side */
+nav.left-side{
+    position: fixed;
+    left: 0;
+    top: 56px;
+    width: 20%;
+    min-width: 300px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    padding: 10px 0 0 10px
+}
+nav.left-side .facebook-list{
+    margin: 20px auto;
+}
+nav.left-side .user-page .home{
+    position: relative;
+}
+nav.left-side .user-page .home::before{
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #1876f2;
+    border-radius: 3px;
+    transition: 0.3s;
+    display: block !important;
+}
+nav.left-side .user-page .home i{
+    font-size: 25px !important;
+    width: 25px !important;
+    -webkit-filter: invert(39%) sepia(57%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(147.75%) hue-rotate(202deg) brightness(97%) contrast(96%);
+    filter: invert(39%) sepia(57%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(147.75%) hue-rotate(202deg) brightness(97%) contrast(96%);
+}
+nav.left-side .line{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 15px 6px 15px;
+    margin: 5px auto;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    height: 40px;
+}
+nav.left-side .line:hover{
+    background-color: rgba(0,0,0,.03);
+}
+nav.left-side .line span:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #E4E6EB;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+nav.left-side .line.user img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+nav.left-side .line span.title{
+    margin-left: 10px;
+    font-size: 0.965rem;
+    color: #000;
+    font-weight: 500;
+}
+nav.left-side .facebook-list .line img{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+nav.left-side .description{
+    padding: 5px
+}
+nav.left-side .description span{
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #65676B;
+    line-height: 18px;
+}
+
+@media (max-width: 1185px) {
+    nav.left-side{
+        background-color: #fff;
+        width: 60px;
+        min-width: 60px;
+        border-right: 1px solid rgba(0,0,0,0.1);
+        padding-right: 5px; 
+        padding-left: 7px 
+    }
+    nav.left-side .user-page .home::before{
+        left: -8px
+    }
+    nav.left-side .line{
+        justify-content: center;
+        padding: 6px 5px 6px 5px;
+    }
+    nav.left-side .line span:first-child{
+        width: 32px;
+        height: 32px;
+    }
+    nav.left-side .line span.title{
+        display: none;
+    }
+    nav.left-side .description{
+        display: none;
+    }
+}
+/* End Nav Left Side */
