@@ -411,3 +411,45 @@ messenger.addEventListener('click', () =>{
     userAccount.classList.remove('active')
     notification.classList.remove('active')
 })
+
+let moreIcon = document.createElement('span')
+        moreIcon.style.cssText = `
+        position: fixed;
+        bottom: 80px;
+        right: 28px;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+        background-color: #fff;`
+        moreIcon.insertAdjacentHTML('beforeend', `
+        <svg style="fill: #65676b" fill="currentColor" viewBox="0 0 20 20" width="20px" height="20px" class="b6ax4al1 m4pnbp5e somyomsx ahndzqod gnhxmgs4 dmdr2h6l kgzac55p"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>`)
+
+
+createMessegeBtn.addEventListener('click', () =>{
+
+    messageContainer.classList.toggle('active')
+
+    if(!(messageContainer.classList.contains('avtive'))){
+        // createMessegeBtn.addEventListener('mouseenter', ()=>{
+        //     document.body.append(moreIcon)
+        //     })
+        //     createMessegeBtn.addEventListener('mouseout', ()=>{
+        //         moreIcon.remove()
+        //     }) 
+        console.log('no Active');
+    }else if(messageContainer.classList.contains('avtive')){
+        // moreIcon.remove()
+        console.log('Active');
+
+    }
+
+})
+closeMessageBtn.addEventListener('click', () =>{
+    messageContainer.classList.remove('active')
+})
