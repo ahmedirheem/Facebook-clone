@@ -453,3 +453,18 @@ createMessegeBtn.addEventListener('click', () =>{
 closeMessageBtn.addEventListener('click', () =>{
     messageContainer.classList.remove('active')
 })
+
+
+createPostBtn.addEventListener('click', ()=>{
+    postContainer.classList.add('active')
+    postOverlay.classList.add('active')
+    document.body.querySelector('textarea').focus()
+})
+postOverlay.addEventListener('click', ()=>{
+    postContainer.classList.remove('active')
+    postOverlay.classList.remove('active')
+})
+closePost.addEventListener('click', ()=>{
+    postContainer.classList.remove('active')
+    postOverlay.classList.remove('active')
+})
