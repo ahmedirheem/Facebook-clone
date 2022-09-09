@@ -860,3 +860,256 @@ nav.left-side .description span{
     }
 }
 /* End Nav Left Side */
+
+
+/* Strat Aside Right Side */
+aside.right-side{
+    position: fixed;
+    right: 0;
+    top: 56px;
+    width: 23%;
+    min-width: 300px;
+    height: calc(100vh - 56px);
+    overflow: auto;
+    padding: 5px 15px 5px 15px
+}
+aside.right-side .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto
+}
+aside.right-side .head h3{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+aside.right-side .head span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+aside.right-side .head span:hover{
+    background-color: #E4E6EB;
+}
+aside.right-side .head svg{
+    fill: #65676B
+}
+aside.right-side .friends .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+aside.right-side .friends .title h3{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+aside.right-side .friends .title span{
+    color: #1876f2;
+    font-size: 0.85rem;
+    font-weight: 300;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+aside.right-side .friends .title span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+aside.right-side .friends .title span:hover::before{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+aside.right-side .friends .content{
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s;
+}
+aside.right-side .birthdays .content:hover,
+aside.right-side .friends .content:hover{
+    background-color: rgba(0,0,0,0.03);
+}
+aside.right-side .friends .image img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+aside.right-side .friends .info{
+    width: calc(100% - 60px);
+    margin-left: 15px;
+}
+aside.right-side .friends .info .name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+aside.right-side .friends .name h4{
+    font-size: 0.85;
+    font-weight: 600;
+}
+aside.right-side .friends .name span{
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: #65676B
+}
+aside.right-side .friends .mutual-friends{
+    display: flex;
+    align-items: center;
+}
+aside.right-side .friends .mutual-friends img{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+aside.right-side .friends .mutual-friends img:nth-child(2){
+    margin-left: -8px;
+}
+aside.right-side .friends .mutual-friends span{
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: #65676B;
+    margin-left: 5px;
+}
+aside.right-side .friends .buttons{
+    display: flex;
+    gap: 10px;
+    margin: 15px auto
+}
+aside.right-side .friends .buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    flex-grow: 1;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+aside.right-side .friends .buttons a.confirm{
+    background-color: #1876f2;
+    color: #fff
+}
+aside.right-side .friends .buttons a.delete{
+    background-color: #E4E6EB;
+    color: #000;
+    transition: 0.3s;
+}
+aside.right-side .friends .buttons a.delete:hover{
+    background-color: rgba(0,0,0,.0.2);
+}
+aside.right-side .birthdays h3{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+    margin: 15px auto;
+}
+aside.right-side .birthdays .content{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s;
+}
+aside.right-side .birthdays .content i{
+    padding-right: 30px;
+}
+aside.right-side .birthdays .content p{
+    font-size: 0.85rem;
+    font-weight: 400;
+    flex-grow: 1;
+    margin-left: 15px;
+    line-height: 22px;
+}
+aside.right-side .birthdays .content p span{
+    font-weight: 600;
+}
+aside.right-side .contacts .icons{
+    display: flex;
+    gap: 10px
+}
+aside.right-side .contacts .icons svg{
+    fill: #65676B
+}
+aside.right-side .contacts .line{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 15px 5px ;
+    margin: 5px auto;
+    border-radius: 7px;
+    cursor: pointer;
+}
+aside.right-side .contacts .line:hover{
+    background-color: rgba(0,0,0,.05);
+}
+aside .contacts .image{
+    position: relative;
+}
+aside.right-side .contacts img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+aside .contacts .active-circle{
+    position: absolute;
+    bottom: 3px;
+    right: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    background-color: #31A24C;
+}
+aside.right-side h3{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 400;
+    margin-left: 15px;
+}
+aside.right-side .contacts .groups > h3{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+    margin: 15px auto;
+}
+aside.right-side .create-group span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #E4E6EB;
+}
+aside.right-side .contacts .create-group h3{
+    font-size: 1rem;
+    font-weight: 400;
+}
+@media (max-width: 900px) {
+    aside.right-side{
+        display: none;
+    }
+}
+/* End Aside Right Side */
